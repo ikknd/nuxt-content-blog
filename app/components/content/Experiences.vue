@@ -12,7 +12,7 @@ defineProps({
 <template>
   <div class="flex flex-col gap-3">
     <h3 class="mb-4 text-white-shadow font-newsreader italic text-2xl">
-      {{ $t("global.experiences") }}
+      Experiences
     </h3>
     <div class="flex flex-col gap-4">
       <div

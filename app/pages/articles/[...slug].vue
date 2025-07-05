@@ -3,14 +3,12 @@ import type { Collections } from '@nuxt/content'
 import { withLeadingSlash, joinURL } from 'ufo'
 
 const route = useRoute()
-const { locale, t, localeProperties } = useI18n()
 
 const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
-const path = computed(() => withLeadingSlash(joinURL(locale.value, 'articles', ...slug.value)))
-const collection = computed(() => `articles_${locale.value}` as keyof Collections)
+const path = computed(() => withLeadingSlash(joinURL('en', 'articles', ...slug.value)))
 
 const { data: page } = await useAsyncData(path.value, async () =>
-  await queryCollection(collection.value).path(path.value).first() as Collections['articles_en'] | Collections['articles_fr'],
+  await queryCollection('articles_en').path(path.value).first() as Collections['articles_en'],
 )
 
 if (!page.value)
@@ -20,7 +18,7 @@ const { copy } = useClipboard()
 
 function copyArticleLink() {
   copy(`${window.location.origin}${route.fullPath}`)
-  toast.success(t('global.article_link_copied'))
+  toast.success('Article link copied to clipboard')
 }
 
 defineShortcuts({
@@ -28,7 +26,7 @@ defineShortcuts({
     usingInput: true,
     handler: () => {
       copy(`${window.location.origin}${route.fullPath}`)
-      toast.success(t('global.article_link_copied'))
+      toast.success('Article link copied to clipboard')
     },
   },
 })
@@ -44,7 +42,7 @@ defineOgImage({
       :page
       :is-writing="route.path.includes('/articles/')"
     />
-    <NuxtLinkLocale
+    <NuxtLink
       to="/writing"
       class="mx-auto my-8 flex cursor-pointer items-center gap-2 px-4 text-muted hover:text-primary transition-colors duration-200 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl"
     >
@@ -53,9 +51,9 @@ defineOgImage({
         class="size-4"
       />
       <span class="text-sm font-extralight">
-        {{ $t("navigation.writing") }}
+        Writing
       </span>
-    </NuxtLinkLocale>
+    </NuxtLink>
     <article class="writing mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
       <h1>
         {{ page?.title }}
@@ -65,25 +63,25 @@ defineOgImage({
         <p class="hidden sm:block">
           |
         </p>
-        <p>{{ page?.readingTime }} {{ $t("writing.readingTime") }}</p>
+        <p>{{ page?.readingTime }} mins to read</p>
         <p class="hidden sm:block">
           |
         </p>
         <UTooltip
-          :text="$t('writing.copy_link')"
+          text="Copy link"
           :shortcuts="['⌘', 'K']"
         >
           <p
             class="flex cursor-pointer select-none items-center gap-1 transition-colors duration-200 hover:text-primary"
             @click="copyArticleLink"
           >
-            {{ $t("writing.share") }}
+            Share article
           </p>
         </UTooltip>
       </div>
       <ContentRenderer
         v-if="page"
-        :dir="localeProperties?.dir ?? 'ltr'"
+        dir="ltr"
         :value="page"
       />
     </article>

@@ -10,7 +10,7 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLinkLocale
+  <NuxtLink
     to="/"
     class="flex shrink-0 items-center"
     aria-label="Go back to home page"
@@ -25,5 +25,5 @@ defineProps({
     >
       {{ appName }}
     </span>
-  </NuxtLinkLocale>
+  </NuxtLink>
 </template>

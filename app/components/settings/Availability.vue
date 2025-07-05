@@ -20,6 +20,12 @@ const currentAvailability = computed(() => {
   ][appConfig.available ? 0 : 1]
 })
 
+const availabilityText = computed(() => {
+  return currentAvailability.value?.status === 'available' 
+    ? 'Available for new opportunities' 
+    : 'Currently working on other awesome projects'
+})
+
 defineProps({
   background: {
     type: Boolean,
@@ -47,7 +53,7 @@ defineProps({
       class="ml-2 text-sm font-medium"
       :class="currentAvailability!.textColor"
     >
-      {{ $t("global." + currentAvailability!.status) }}
+      {{ availabilityText }}
     </span>
   </div>
 </template>

@@ -2,7 +2,6 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@nuxt/ui',
-    '@nuxtjs/i18n',
     '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxt/image',
@@ -83,7 +82,7 @@ export default defineNuxtConfig({
     prerender: {
       autoSubfolderIndex: false,
       crawlLinks: true,
-      routes: ['/en', '/fr'],
+      routes: ['/'],
     },
   },
 
@@ -97,20 +96,6 @@ export default defineNuxtConfig({
         })
       }
     },
-  },
-
-  i18n: {
-    locales: [
-      { code: 'en', name: 'English', language: 'en-US' },
-      { code: 'fr', name: 'French', language: 'fr-FR' },
-    ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-    },
-    strategy: 'prefix',
-    defaultLocale: 'en',
   },
 
   icon: {

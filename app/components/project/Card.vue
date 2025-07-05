@@ -41,7 +41,7 @@ const img = useImage()
                 {{ project.name }}
               </span>
               <span class="whitespace-nowrap text-xs text-neutral-500">
-                {{ project.release === "soon" ? $t("global.soon") + "..." : project.release }}
+                {{ project.release === "soon" ? "Coming soon..." : project.release }}
               </span>
             </div>
           </div>

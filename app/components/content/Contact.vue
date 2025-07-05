@@ -3,7 +3,6 @@ import * as z from 'zod'
 import type { FormSubmitEvent } from '#ui/types'
 
 const { profile } = useAppConfig()
-const { t } = useI18n()
 
 const isResendEnabled = useRuntimeConfig().public.resend
 
@@ -39,10 +38,10 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       fullname: '',
       subject: '',
     }
-    toast.success(t('contact.success'))
+    toast.success('Your message has been sent successfully')
   }
   catch {
-    toast.error(t('contact.error'))
+    toast.error('Oups, an error occurred while sending your message')
   }
   loading.value = false
 }
@@ -117,7 +116,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
           <UInput
             v-model="state.subject"
             class="w-full"
-            :placeholder="$t('contact.subject')"
+            placeholder="Subject of your message"
           />
         </UFormField>
 
@@ -137,7 +136,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         <div class="flex justify-center">
           <UTooltip
             :disabled="isResendEnabled"
-            :text="$t('contact.disabled')"
+            text="You must set your resend API key"
           >
             <UButton
               :loading
@@ -145,7 +144,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
               type="submit"
               block
             >
-              {{ $t("contact.submit") }}
+              Send
             </UButton>
           </UTooltip>
         </div>
@@ -170,7 +169,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
               aria-hidden="true"
             />
             <UTooltip
-              :text="$t('global.email')"
+              text="Copy email"
               :shortcuts="['⌘', 'O']"
             >
               <NuxtLink

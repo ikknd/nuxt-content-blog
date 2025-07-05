@@ -5,13 +5,8 @@ const searchedTags = ref<string[]>([])
 const searchedTitle = ref('')
 const showSearch = ref(false)
 
-const { locale } = useI18n()
-
-const { data: articles } = await useAsyncData('articles-' + locale.value, async () => {
-  const collection = ('articles_' + locale.value) as keyof Collections
-  return await queryCollection(collection).all() as Collections['articles_en'][] | Collections['articles_fr'][]
-}, {
-  watch: [locale],
+const { data: articles } = await useAsyncData('articles-en', async () => {
+  return await queryCollection('articles_en').all() as Collections['articles_en'][]
 })
 
 if (!articles.value)
@@ -55,7 +50,7 @@ const toggleTag = (tag: string) => {
         class="font-newsreader italic text-white-shadow cursor-pointer select-none text-lg"
         @click="showSearch = !showSearch"
       >
-        {{ showSearch ? $t("writing.hide_search") : $t("writing.show_search") }}
+        {{ showSearch ? "Hide search" : "Search" }}
       </span>
     </div>
     <div
@@ -66,7 +61,7 @@ const toggleTag = (tag: string) => {
         <UInput
           v-model="searchedTitle"
           class="w-full sm:w-96"
-          :placeholder="$t('writing.search_article')"
+          placeholder="Search article"
         />
       </div>
       <div
@@ -109,10 +104,10 @@ const toggleTag = (tag: string) => {
       class="flex h-64 flex-col items-center justify-center gap-2"
     >
       <span class="text-2xl">
-        {{ $t("writing.not_found") }}
+        No writing found
       </span>
       <span class="text-sm">
-        {{ $t("writing.not_found_description") }}
+        We couldn't find the writing you were looking for.
       </span>
     </div>
   </section>
