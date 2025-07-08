@@ -1,20 +1,20 @@
 export default defineAppConfig({
   global: {
-    meetingLink: 'https://cal.com/hugorcd/15min',
+    meetingLink: 'https://cal.com/ivfomini/15min',
     available: true,
   },
   profile: {
-    name: 'Hugo Richard',
-    job: 'Frontend Architect and Designer',
-    email: 'contact@hrcd.fr',
-    phone: '(+33) 6 21 56 22 18',
-    picture: 'https://avatars.githubusercontent.com/u/71938701?v=4',
+    name: 'Igor Fomin',
+    job: 'Fullstack Web Developer',
+    email: 'contact@test.com',
+    phone: '(+11) 111 11 11',
+    picture: 'https://avatars.githubusercontent.com/u/6150406?v=4',
   },
   socials: {
-    github: 'https://github.com/HugoRCD',
-    twitter: 'https://twitter.com/HugoRCD__',
-    linkedin: 'https://www.linkedin.com/in/hugo-richard-0801',
-    instagram: 'https://www.instagram.com/hugo.rcd_',
+    github: 'https://github.com/ikknd',
+    twitter: 'https://twitter.com/ivfomini',
+    linkedin: 'https://www.linkedin.com/in/ivfomini',
+    // instagram: 'https://www.instagram.com/hugo.rcd_',
   },
   seo: {
     title: 'Canvas a Nuxt portfolio template',

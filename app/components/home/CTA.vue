@@ -5,7 +5,7 @@
   <div class="flex flex-col items-center justify-center gap-4 sm:gap-2">
     <div class="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-2">
       <UTooltip
-        text="Copy email"
+        text="Contact me"
         :shortcuts="['⌘', 'O']"
       >
         <SpotlightButton>

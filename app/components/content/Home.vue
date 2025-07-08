@@ -54,16 +54,15 @@
           data-animate
         />
 
-        <div
+        <!-- <div
           style="--stagger: 5"
           data-animate
           class="mt-12 flex w-full max-w-3xl flex-col gap-4 lg:mt-16"
         >
-          <!-- projects -->
           <HomeProjects />
-        </div>
+        </div> -->
 
-        <Divider class="my-9" />
+        <Divider class="my-15" />
 
         <HomeFaq
           style="--stagger: 6"
