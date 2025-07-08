@@ -16,7 +16,7 @@ defineProps({
     aria-label="Go back to home page"
   >
     <UIcon
-      name="custom:maison-hochard"
+      name="custom:if"
       class="size-8"
     />
     <span

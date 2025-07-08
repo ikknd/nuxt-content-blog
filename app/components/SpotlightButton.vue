@@ -31,7 +31,7 @@ defineProps({
       class="absolute inset-0 flex items-center [container-type:inline-size]"
     >
       <div
-        class="absolute size-[100cqw] animate-spin bg-[conic-gradient(from_0_at_50%_50%,rgba(255,167,86,0.5)_0deg,transparent_60deg,transparent_300deg,rgba(255,167,86,0.5)_360deg)] opacity-0 transition duration-300 group-hover:opacity-100"
+        class="absolute size-[100cqw] animate-spin bg-[conic-gradient(from_0_at_50%_50%,rgba(6,182,212,0.5)_0deg,transparent_60deg,transparent_300deg,rgba(6,182,212,0.5)_360deg)] opacity-0 transition duration-300 group-hover:opacity-100"
       />
     </div>
 

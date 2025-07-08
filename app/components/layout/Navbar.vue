@@ -28,7 +28,7 @@ const route = useRoute()
             :aria-label="item.name + ' navigation link'"
             :class="[
               item.to === route.path
-                ? 'border border-white/5 bg-zinc-900/10 shadow-2xl shadow-white/50 backdrop-blur-3xl text-shadow-sm text-[#FFA756]'
+                ? 'border border-white/5 bg-zinc-900/10 shadow-2xl shadow-white/50 backdrop-blur-3xl text-shadow-sm text-[#06B6D4]'
                 : 'text-muted',
             ]"
             :to="item.to"
