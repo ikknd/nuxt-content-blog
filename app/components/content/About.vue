@@ -26,7 +26,6 @@ const stack = await queryCollection('stack').first()
         <div class="flex flex-col gap-4 text-primary">
           <slot
             name="intro"
-            mdc-unwrap="p"
           />
         </div>
         <AboutSignature class="absolute -bottom-24 right-0 hidden w-40 sm:block" />
