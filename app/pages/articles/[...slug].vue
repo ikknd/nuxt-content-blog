@@ -5,10 +5,10 @@ import { withLeadingSlash, joinURL } from 'ufo'
 const route = useRoute()
 
 const slug = computed(() => Array.isArray(route.params.slug) ? route.params.slug as string[] : [route.params.slug as string])
-const path = computed(() => withLeadingSlash(joinURL('en', 'articles', ...slug.value)))
+const path = computed(() => withLeadingSlash(joinURL('articles', ...slug.value)))
 
 const { data: page } = await useAsyncData(path.value, async () =>
-  await queryCollection('articles_en').path(path.value).first() as Collections['articles_en'],
+  await queryCollection('articles').path(path.value).first() as Collections['articles'],
 )
 
 if (!page.value)

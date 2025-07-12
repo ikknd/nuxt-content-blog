@@ -5,8 +5,8 @@ const searchedTags = ref<string[]>([])
 const searchedTitle = ref('')
 const showSearch = ref(false)
 
-const { data: articles } = await useAsyncData('articles-en', async () => {
-  return await queryCollection('articles_en').all() as Collections['articles_en'][]
+const { data: articles } = await useAsyncData('articles', async () => {
+  return await queryCollection('articles').all() as Collections['articles'][]
 })
 
 if (!articles.value)

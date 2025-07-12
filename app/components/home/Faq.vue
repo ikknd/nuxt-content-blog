@@ -6,7 +6,7 @@ const route = useRoute()
 
 const slug = computed(() => withLeadingSlash(String(route.params.slug)))
 const { data: faq } = await useAsyncData('faq-' + slug.value, async () => {
-  return await queryCollection('faq_en').first() as Collections['faq_en']
+  return await queryCollection('faq').first() as Collections['faq']
 })
 
 const items = computed(() => {

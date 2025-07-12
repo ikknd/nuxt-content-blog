@@ -16,15 +16,6 @@ const commonArticleSchema = z.object({
   tags: z.array(z.string().nonempty()),
 })
 
-const commonProjectSchema = z.object({
-  name: z.string().nonempty(),
-  image: z.string().url(),
-  link: z.string().url(),
-  release: z.string().nonempty(),
-  date: z.string().nonempty(),
-  featured: z.boolean().optional(),
-})
-
 const commonFaqSchema = z.object({
   title: z.string().nonempty(),
   subtitle: z.string().nonempty(),
@@ -42,32 +33,25 @@ const commonFaqSchema = z.object({
 })
 
 export const collections = {
-  content_en: defineCollection(
+  content: defineCollection(
     asSeoCollection({
       type: 'page',
       source: {
-        include: 'en/**/*.md',
-        exclude: ['en/articles/*.md'],
-        prefix: '/en',
+        include: '**/*.md',
+        exclude: ['articles/*.md'],
+        prefix: '/',
       },
       schema: commonContentSchema,
     }),
   ),
-  articles_en: defineCollection(
+  articles: defineCollection(
     asSeoCollection({
       type: 'page',
       source: {
-        include: 'en/articles/*.md',
-        prefix: '/en/articles',
+        include: 'articles/*.md',
+        prefix: '/articles',
       },
       schema: commonArticleSchema,
-    }),
-  ),
-  projects_en: defineCollection(
-    asSeoCollection({
-      type: 'data',
-      source: 'en/projects/*.json',
-      schema: commonProjectSchema,
     }),
   ),
   stack: defineCollection({
@@ -83,9 +67,9 @@ export const collections = {
       ),
     }),
   }),
-  faq_en: defineCollection({
+  faq: defineCollection({
     type: 'data',
-    source: 'en/faq.json',
+    source: 'faq.json',
     schema: commonFaqSchema,
   }),
 }
