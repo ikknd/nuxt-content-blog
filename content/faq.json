@@ -6,12 +6,12 @@
       "title": "Services",
       "questions": [
         {
-          "label": "What services do you offer?",
-          "content": "I offer a range of services including web design, web development, branding, and photography. I can also help with SEO and social media marketing."
+          "label": "What kind of work do you do?",
+          "content": "I specialize in full-stack web development using Vue, Nuxt, and Laravel. I build fast, maintainable websites and web apps, and can also help with performance optimization and technical consulting."
         },
         {
-          "label": "Can you teach me how to make a website?",
-          "content": "I don't offer courses at the moment, but I can recommend resources and advice to help you get the most out of your learning."
+          "label": "Can you help me learn how to build websites?",
+          "content": "While I don't offer courses right now, I'm happy to share useful resources, guides, and tips to help you get started or improve your skills."
         }
       ]
     },
@@ -19,20 +19,16 @@
       "title": "Pricing",
       "questions": [
         {
-          "label": "How much does a project cost?",
-          "content": "The cost of a project depends on many factors, such as the size of the project, the features, the development time, etc. The initial amount of my web services starts at 2000€, with an average between 3000€ and 10000€. For any other design or consulting service, I usually charge 450€ per day."
+          "label": "What does a typical project cost?",
+          "content": "Pricing varies depending on project scope, features, and complexity. Most projects start at around €2,000, with typical budgets ranging from €3,000 to €10,000. For consulting or design work, I charge a day rate of €450."
         },
         {
-          "label": "How does payment work for a project?",
-          "content": "I ask for a 40% deposit before starting a project, and the remaining 60% after successful delivery. I accept payments by bank transfer, PayPal, etc..."
+          "label": "What’s your payment structure?",
+          "content": "I usually require a 40% upfront deposit to begin work. The remaining 60% is due upon project completion. Payment can be made via bank transfer, PayPal, or other common methods."
         },
         {
-          "label": "How long does a project take?",
-          "content": "It's difficult to give an exact estimate, as each project is different, but the majority of my past work has taken between 2 weeks and 2 months."
-        },
-        {
-          "label": "Do you offer discounts?",
-          "content": "I offer a 15% discount for students and non-profit organizations."
+          "label": "How long does a project usually take?",
+          "content": "Timelines depend on the scope and complexity, but most projects are completed within 2 to 8 weeks."
         }
       ]
     },
@@ -40,12 +36,12 @@
       "title": "Personal",
       "questions": [
         {
-          "label": "What do you enjoy most about this work?",
-          "content": "I love learning new things and being able to create just about anything from scratch, creating beautiful things that people will use and appreciate."
+          "label": "What do you enjoy most about your work?",
+          "content": "I enjoy constantly learning, solving real problems, and building things from scratch—especially when they’re used and appreciated by others."
         },
         {
-          "label": "Hobbies outside of work?",
-          "content": "I love what I do, so I usually spend a lot of time working on personal projects, photography, etc. I'm also a big sports fan. I often go to the gym and I recently started climbing!"
+          "label": "What do you do outside of work?",
+          "content": "I spend most of my free time with my family. I also enjoy cycling, swimming, home workouts, and going for long walks."
         }
       ]
     }

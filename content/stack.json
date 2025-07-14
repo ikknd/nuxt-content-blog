@@ -11,9 +11,19 @@
       "icon": "custom:vue"
     },
     {
-      "name": "Nest",
-      "link": "https://nestjs.com/",
-      "icon": "custom:nest"
+      "name": "Laravel",
+      "link": "https://laravel.com/",
+      "icon": "custom:laravel"
+    },
+    {
+      "name": "Docker",
+      "link": "https://www.docker.com/",
+      "icon": "custom:docker"
+    },
+    {
+      "name": "TypeScript",
+      "link": "https://www.typescriptlang.org/",
+      "icon": "custom:typescript"
     },
     {
       "name": "TailwindCSS",
@@ -21,34 +31,25 @@
       "icon": "custom:tailwind"
     },
     {
-      "name": "Prisma",
-      "link": "https://www.prisma.io/",
-      "icon": "custom:prisma"
+      "name": "Vite",
+      "link": "https://vite.dev/",
+      "icon": "custom:vitejs"
     },
     {
-      "name": "Vercel",
-      "link": "https://vercel.com/",
-      "icon": "custom:vercel"
-    },
-    {
-      "name": "Linear",
-      "link": "https://linear.app/",
-      "icon": "custom:linear"
-    },
-    {
-      "name": "Arc",
-      "link": "https://arc.net/",
-      "icon": "custom:arc"
-    },
-    {
-      "name": "Raycast",
-      "link": "https://raycast.com/",
-      "icon": "custom:raycast"
+      "name": "Pinia",
+      "link": "https://pinia.vuejs.org/",
+      "icon": "custom:pinia"
     },
     {
       "name": "Notion",
       "link": "https://www.notion.so/",
       "icon": "custom:notion"
+    },
+
+    {
+      "name": "Linear",
+      "link": "https://linear.app/",
+      "icon": "custom:linear"
     },
     {
       "name": "Cron",
@@ -74,21 +75,6 @@
       "name": "Figma",
       "link": "https://www.figma.com/",
       "icon": "custom:figma"
-    },
-    {
-      "name": "Photoshop",
-      "link": "https://www.adobe.com/products/photoshop.html",
-      "icon": "custom:photoshop"
-    },
-    {
-      "name": "Illustrator",
-      "link": "https://www.adobe.com/products/illustrator.html",
-      "icon": "custom:illustrator"
-    },
-    {
-      "name": "Lightroom",
-      "link": "https://www.adobe.com/products/photoshop-lightroom.html",
-      "icon": "custom:lightroom"
     }
   ]
 }
