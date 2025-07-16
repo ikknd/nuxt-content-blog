@@ -41,40 +41,24 @@
       "icon": "custom:pinia"
     },
     {
-      "name": "Notion",
-      "link": "https://www.notion.so/",
-      "icon": "custom:notion"
-    },
-
-    {
-      "name": "Linear",
-      "link": "https://linear.app/",
-      "icon": "custom:linear"
+      "name": "MySQL",
+      "link": "https://www.mysql.com/",
+      "icon": "custom:mysql"
     },
     {
-      "name": "Cron",
-      "link": "https://calendar.cron.com/",
-      "icon": "custom:cron"
+      "name": "PostgreSQL",
+      "link": "https://www.postgresql.org/",
+      "icon": "custom:postgresql"
     },
     {
-      "name": "Spark",
-      "link": "https://sparkmailapp.com/",
-      "icon": "custom:spark"
+      "name": "MongoDB",
+      "link": "https://www.mongodb.com/",
+      "icon": "custom:mongodb"
     },
     {
-      "name": "1Password",
-      "link": "https://1password.com/",
-      "icon": "custom:onepassword"
-    },
-    {
-      "name": "Fig",
-      "link": "https://fig.io/",
-      "icon": "custom:fig"
-    },
-    {
-      "name": "Figma",
-      "link": "https://www.figma.com/",
-      "icon": "custom:figma"
+      "name": "Redis",
+      "link": "https://redis.io/",
+      "icon": "custom:redis"
     }
   ]
 }
