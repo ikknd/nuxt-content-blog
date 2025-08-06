@@ -6,8 +6,13 @@ const searchedTitle = ref('')
 const showSearch = ref(false)
 
 const { data: articles } = await useAsyncData('articles', async () => {
-  return await queryCollection('articles').all() as Collections['articles'][]
+  const allArticles = await queryCollection('articles').all() as Collections['articles'][]
+
+  return allArticles
+    .filter(article => article.date) // Optional safety check
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 })
+
 
 if (!articles.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found' })

@@ -1,6 +1,6 @@
 ---
 title: MariaDB + phpmyadmin + Docker - Local DB Setup and Container Import/Export
-date: 21/01/2020
+date: 2020-01-22
 description: Tutorial on how to set up MariaDB and phpMyAdmin with Docker, including importing and exporting databases from containers.
 tags:
   - docker
