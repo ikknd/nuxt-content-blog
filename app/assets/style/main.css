@@ -122,6 +122,15 @@ html, body, #__nuxt, #__layout {
     @apply mb-4 mt-4 pl-6;
   }
 
+  ul {
+    @apply list-disc;
+  }
+  
+  ol {
+    @apply list-decimal;
+  }
+  
+
   li {
     @apply mb-1;
   }
