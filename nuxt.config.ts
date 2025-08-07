@@ -65,10 +65,6 @@ export default defineNuxtConfig({
     '/': { prerender: false },
   },
 
-  future: {
-    compatibilityVersion: 4,
-  },
-
   experimental: {
     viewTransition: true,
   },
