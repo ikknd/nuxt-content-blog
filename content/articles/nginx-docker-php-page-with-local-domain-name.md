@@ -3,10 +3,10 @@ title: Nginx + PHP + Docker - Setting Up a Local PHP Page with a Domain Name
 date: 2020-01-21
 description: Tutorial on how to set up a simple PHP page using Docker and Nginx, complete with a local domain name.
 tags:
-  - Docker
-  - Nginx
-  - PHP
-  - Web development
+  - docker
+  - nginx
+  - php
+  - web development
 image: http://localhost:3000/articles/docker-recipe-2-php.jpg
 readingTime: "2"
 ---

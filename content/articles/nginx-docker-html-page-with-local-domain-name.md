@@ -3,9 +3,9 @@ title: Nginx + Docker - Serving a Simple HTML Page with a Local Domain Name
 date: 2020-01-20
 description: Tutorial on how to set up a very simple HTML page using Docker and Nginx, accessible via a local domain name.
 tags:
-  - Docker
-  - Nginx
-  - Web development
+  - docker
+  - nginx
+  - web development
 image: http://localhost:3000/articles/docker-recipe-1-nginx.jpg
 readingTime: "2"
 ---
