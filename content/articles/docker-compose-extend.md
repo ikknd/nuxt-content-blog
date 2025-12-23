@@ -19,6 +19,8 @@ readingTime: "2"
 
 Official docs: https://docs.docker.com/compose/extends/
 
+![preview](/articles/docker-recipe-8-extend.jpg)
+
 There are two common options for using multiple compose files.
 
 ## Option 1 — Default override file
