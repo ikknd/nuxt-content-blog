@@ -2,6 +2,7 @@
 title: "Cron + Docker — what to do"
 date: 2020-01-29
 description: "How to run Linux cron jobs that execute commands inside Docker containers, with practical examples and notes."
+canonical: https://hackernoon.com/how-to-setup-cron-and-docker-correctly-a-how-to-guide-9v5f36kz
 tags:
   - docker
   - cron

@@ -1,7 +1,8 @@
 ---
-title: Redis + redis-commander + Docker — How to set up
+title: "Redis + redis-commander + Docker — How to set up"
 date: 2020-01-23
 description: "Docker Compose setup for Redis with persistent storage and redis-commander UI."
+canonical: https://hackernoon.com/how-to-configurate-redis-redis-commander-docker-616136f2
 tags:
   - docker
   - redis

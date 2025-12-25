@@ -1,11 +1,12 @@
 ---
-title: How to use different/multiple Docker Compose files on different servers
+title: "How to use different/multiple Docker Compose files on different servers"
 date: 2020-03-05
-description: |
+description: > 
   Two common approaches for composing multiple docker-compose files (default overrides
   and explicit override files), their drawbacks, and a recommended workflow using
   `docker-compose config` to produce a merged file that can be inspected and used
   with both `docker-compose` and Docker Swarm.
+canonical: https://hackernoon.com/how-to-extend-docker-compose-file-jc723ypq
 tags:
   - docker
   - docker-compose
@@ -17,7 +18,7 @@ readingTime: "2"
 
 ## Introduction
 
-Official docs: https://docs.docker.com/compose/extends/
+<a href="https://docs.docker.com/compose/extends/" target="_blank">Official docs</a>
 
 ![preview](/articles/docker-recipe-8-extend.jpg)
 

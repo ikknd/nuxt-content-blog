@@ -2,6 +2,7 @@
 title: "How to use environment variables (.env) in docker compose file"
 date: 2020-02-26
 description: "Example showing how to use .env variables (with defaults) in a docker-compose.yml file — using Redis + redis-commander as an example."
+canonical: https://hackernoon.com/how-to-use-environment-variables-in-docker-compose-file-l2n32ou
 tags:
   - docker
   - docker-compose
