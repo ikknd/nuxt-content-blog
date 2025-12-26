@@ -150,9 +150,9 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
         </div>
       </UForm>
       <Divider class="my-10" />
-      <div class="flex w-full flex-col items-center justify-between gap-4 sm:flex-row">
-        <div class="flex flex-col gap-3">
-          <!-- <dd class="flex items-center gap-3 text-neutral-400">
+      <div class="flex w-full flex-col items-center justify-center gap-4 sm:flex-row">
+        <!-- <div class="flex flex-col gap-3">
+          <dd class="flex items-center gap-3 text-neutral-400">
             <UIcon
               name="heroicons-phone"
               class="size-6"
@@ -161,7 +161,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             <span>
               {{ profile.phone }}
             </span>
-          </dd> -->
+          </dd>
           <dd class="flex items-center gap-3 text-neutral-400">
             <UIcon
               name="heroicons-envelope"
@@ -180,7 +180,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
               </NuxtLink>
             </UTooltip>
           </dd>
-        </div>
+        </div> -->
         <div>
           <MeetingButton />
         </div>

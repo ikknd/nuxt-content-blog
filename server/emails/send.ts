@@ -8,12 +8,12 @@ export default defineEventHandler(async (event: H3Event) => {
     const body = (await readBody(event))
     const { email, subject, message, phone, fullname } = body
     return await resend.emails.send({
-      from: 'My Blog <contact@test.com>',
-      to: ['contact@test.com'],
+      from: process.env.NUXT_PRIVATE_CONTACT_FROM!,
+      to: [process.env.NUXT_PRIVATE_CONTACT_TO!],
       subject: 'New message from my blog',
       html: `
-      <p>A new message has been sent from your blog contact form.</p>
-      <p>Here are the message details:</p>
+      <p>A new message from your blog contact form.</p>
+      <p>Message details:</p>
       <ul>
         <li>Name: ${fullname}</li>
         <li>Email: ${email}</li>
@@ -25,6 +25,6 @@ export default defineEventHandler(async (event: H3Event) => {
     })
   }
   catch (error) {
-    return { error }
+    throw createError({ statusCode: 500, statusMessage: 'Failed to send message' })
   }
 })
