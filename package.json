@@ -1,6 +1,6 @@
 {
-  "name": "canvas-template",
-  "author": "HugoRCD",
+  "name": "nuxt-content-blog",
+  "author": "Igor Fomin",
   "private": true,
   "license": "Apache-2.0",
   "scripts": {

@@ -14,12 +14,12 @@ export default defineAppConfig({
     github: 'https://github.com/ikknd',
     twitter: 'https://twitter.com/ivfomini',
     linkedin: 'https://www.linkedin.com/in/ivfomini',
-    // instagram: 'https://www.instagram.com/hugo.rcd_',
+    // instagram: 'https://www.instagram.com/',
   },
   seo: {
-    title: 'Canvas a Nuxt portfolio template',
-    description: 'Canvas is a simple but beautiful portfolio template for designers and developers built with Nuxt and Tailwind CSS. Made with ❤️ by HugoRCD',
-    url: 'https://canvas.hrcd.fr',
+    title: 'My Dev Journey | Igor Fomin',
+    description: 'A personal blog where I share my experiences with web development',
+    url: 'https://canvas.hrcd.fr', //TODO: change to my site
   },
   ui: {
     colors: {
