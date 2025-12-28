@@ -12,6 +12,7 @@ const state = ref({
   phone: '',
   fullname: '',
   subject: '',
+  company: '',
 })
 
 const schema = z.object({
@@ -37,6 +38,7 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       phone: '',
       fullname: '',
       subject: '',
+      company: '',
     }
     toast.success('Your message has been sent successfully')
   }
@@ -133,6 +135,16 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
             placeholder="Lets work together!"
           />
         </UFormField>
+        <!-- Honeypot field to catch bots -->
+        <input
+          v-model="state.company"
+          type="text"
+          name="company"
+          tabindex="-1"
+          autocomplete="off"
+          style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;"
+          aria-hidden="true"
+        />
         <div class="flex justify-center">
           <UTooltip
             :disabled="isResendEnabled"
