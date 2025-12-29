@@ -22,10 +22,10 @@ const pageSEO = computed(() => ({
   description: isWriting ? page?.description : page?.description || seo.description,
 }))
 
-const getTitleTemplate = (title: string | undefined) => {
+const getTitleTemplate = (title?: string): string | null => {
   if (route.path === '/') return title || `${seo.title}`
-  if (isWriting) return title
-  return `${title} | ${seo.title}`
+  if (isWriting) return title ?? null
+  return title ? `${title} | ${seo.title}` : `${seo.title}`
 }
 
 useSeoMeta({
