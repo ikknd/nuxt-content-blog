@@ -1,0 +1,6 @@
+{
+    "version": 2,
+    "routes": [
+      { "src": "/(.*)", "dest": "/.vercel/output/functions/__nitro.func/index.mjs" }
+    ]
+  }
