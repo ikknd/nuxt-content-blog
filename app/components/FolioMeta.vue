@@ -1,13 +1,6 @@
 <script setup lang="ts">
 import type { ContentCollectionItem } from '@nuxt/content'
 
-// useScriptPlausibleAnalytics({
-//   domain: 'ifomin.com',
-//   scriptInput: {
-//     src: 'https://analytics.ifomin.com/js/script.js',
-//   },
-// })
-
 const { page, isWriting } = defineProps<{
   page: ContentCollectionItem
   isWriting: boolean

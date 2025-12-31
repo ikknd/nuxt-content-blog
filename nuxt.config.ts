@@ -29,6 +29,19 @@ export default defineNuxtConfig({
     indexable: true,
   },
 
+  app: {
+    head: {
+      script: process.env.NODE_ENV === 'production'
+        ? [{
+            src: 'https://cloud.umami.is/script.js',
+            async: true,
+            defer: true,
+            'data-website-id': process.env.NUXT_PUBLIC_UMAMI_WEBSITE_ID,
+          }]
+        : [],
+    },
+  },
+  
   colorMode: {
     preference: 'dark',
     fallback: 'dark',
