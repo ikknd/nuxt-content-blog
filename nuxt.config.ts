@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   css: ['~/assets/style/main.css'],
 
   site: {
-    url: 'https://canvas.hrcd.fr', //TODO: change to my site
+    url: 'https://ifomin.com',
     defaultLocale: 'en',
     indexable: true,
   },

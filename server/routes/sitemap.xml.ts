@@ -10,7 +10,7 @@ export default defineEventHandler(async (event: H3Event) => {
   const allDocs = [...contentDocs, ...articleDocs]
   
   const sitemap = new SitemapStream({
-    hostname: 'https://canvas.hrcd.fr', //TODO: change link to my site
+    hostname: 'https://ifomin.com',
   })
 
   const paths = new Set<string>()

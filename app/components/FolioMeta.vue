@@ -1,11 +1,10 @@
 <script setup lang="ts">
 import type { ContentCollectionItem } from '@nuxt/content'
 
-//TODO: change domain to my site
 // useScriptPlausibleAnalytics({
-//   domain: 'canvas.hrcd.fr',
+//   domain: 'ifomin.com',
 //   scriptInput: {
-//     src: 'https://analytics.hrcd.fr/js/script.js',
+//     src: 'https://analytics.ifomin.com/js/script.js',
 //   },
 // })
 
@@ -54,8 +53,7 @@ useHead({
   link,
 })
 
-//TODO: change link to my site
-// defineOgImage({ url: 'https://canvas.hrcd.fr/og.png', width: 1200, height: 630, alt: 'Home image' })
+defineOgImage({ url: 'https://ifomin.com/og.png', width: 1200, height: 630, alt: 'Home image' })
 </script>
 
 <template>

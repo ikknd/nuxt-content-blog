@@ -19,7 +19,7 @@ export default defineAppConfig({
   seo: {
     title: 'My Dev Journey | Igor Fomin',
     description: 'A personal blog where I share my experiences with web development',
-    url: 'https://canvas.hrcd.fr', //TODO: change to my site
+    url: 'https://ifomin.com',
   },
   ui: {
     colors: {
