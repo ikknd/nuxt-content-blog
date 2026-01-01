@@ -58,6 +58,11 @@ export default defineNuxtConfig({
     },
   },
 
+  image: {
+    domains: ['avatars.githubusercontent.com'],
+    provider: 'netlify',
+  },
+
   mdc: {
     highlight: {
       theme: {
