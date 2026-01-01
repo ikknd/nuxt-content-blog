@@ -7,7 +7,7 @@ tags:
   - docker
   - nginx
   - web development
-image: http://localhost:3000/articles/docker-recipe-1-nginx.jpg
+image: /articles/docker-recipe-1-nginx.jpg
 readingTime: "2"
 ---
 

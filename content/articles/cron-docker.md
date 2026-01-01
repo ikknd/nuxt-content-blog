@@ -7,7 +7,7 @@ tags:
   - docker
   - cron
   - linux
-image: http://localhost:3000/articles/docker-recipe-6-cron.jpg
+image: /articles/docker-recipe-6-cron.jpg
 readingTime: "2"
 ---
 

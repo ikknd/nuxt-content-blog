@@ -8,7 +8,7 @@ tags:
   - docker-compose
   - env
   - redis
-image: http://localhost:3000/articles/docker-recipe-7-env.jpg
+image: /articles/docker-recipe-7-env.jpg
 readingTime: "1"
 ---
 

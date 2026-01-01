@@ -9,7 +9,7 @@ tags:
   - mysql
   - phpmyadmin
   - database
-image: http://localhost:3000/articles/docker-recipe-3-mysql.jpg
+image: /articles/docker-recipe-3-mysql.jpg
 readingTime: "2"
 ---
 

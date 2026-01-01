@@ -12,7 +12,7 @@ tags:
   - docker-compose
   - docker-swarm
   - devops
-image: http://localhost:3000/articles/docker-recipe-8-extend.jpg
+image: /articles/docker-recipe-8-extend.jpg
 readingTime: "2"
 ---
 

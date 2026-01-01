@@ -8,7 +8,7 @@ tags:
   - redis
   - redis-commander
   - docker-compose
-image: http://localhost:3000/articles/docker-recipe-4-redis.jpg
+image: /articles/docker-recipe-4-redis.jpg
 readingTime: "1"
 ---
 

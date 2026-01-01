@@ -8,7 +8,7 @@ tags:
   - nginx
   - php
   - web development
-image: http://localhost:3000/articles/docker-recipe-2-php.jpg
+image: /articles/docker-recipe-2-php.jpg
 readingTime: "2"
 ---
 
