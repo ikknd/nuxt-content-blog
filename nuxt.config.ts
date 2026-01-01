@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@nuxt/scripts',
+    '@netlify/nuxt',
   ],
 
   imports: {
