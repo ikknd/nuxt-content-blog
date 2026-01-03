@@ -40,6 +40,7 @@ export default defineEventHandler(async (event: H3Event) => {
     return await resend.emails.send({
       from: process.env.NUXT_PRIVATE_CONTACT_FROM!,
       to: [process.env.NUXT_PRIVATE_CONTACT_TO!],
+      replyTo: email,
       subject: 'New message from my blog',
       html: `
       <p>A new message from your blog contact form.</p>
