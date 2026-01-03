@@ -6,7 +6,7 @@ export default defineAppConfig({
   profile: {
     name: 'Igor Fomin',
     job: 'Fullstack Web Developer',
-    email: 'contact@test.com',
+    email: 'contact@ifomin.com',
     phone: '(+11) 111 11 11',
     picture: 'https://avatars.githubusercontent.com/u/6150406?v=4',
   },
